@@ -1,0 +1,294 @@
+/* 共通 */
+
+.App {
+  margin: 70px 0;
+}
+
+.button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.button:hover {
+  background-color: #e0e0e0;
+  border-color: #adadad;
+}
+
+/* 新規登録画面 */
+
+.sign-up-button {
+  margin-right: 10px;
+  background-color: #4caf50;
+  color: white;
+}
+
+.sign-up-button:hover {
+  background-color: rgba(76, 175, 80, 0.8);
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+}
+
+.signup-form input {
+  margin: 10px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-checkbox {
+  margin-right: 5px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* ログイン画面 */
+
+.login-button {
+  background-color: #2196f3;
+  color: white;
+}
+
+.login-button:hover {
+  background-color: rgba(33, 150, 243, 0.8);
+}
+
+/* マイページ */
+
+.new-post-button {
+  margin-right: 10px;
+  background-color: #22b122;
+  color: white;
+}
+
+.new-post-button:hover {
+  background-color: rgba(34, 177, 34, 0.8);
+}
+
+.change-pass-button {
+  margin-right: 10px;
+  background-color: #486adb;
+  color: white;
+}
+
+.change-pass-button:hover {
+  background-color: rgba(72, 106, 219, 0.8);
+}
+
+.logout-button {
+  margin-right: 10px;
+  background-color: #dd5745;
+  color: white;
+}
+
+.logout-button:hover {
+  background-color: rgba(221, 87, 69, 0.8);
+}
+
+.no-posts-message {
+  color: #b3b3b3;
+  margin-top: 30px;
+}
+
+/* 新規投稿画面 */
+.new-post-title-area,
+.new-post-content-area {
+  width: 80%;
+  margin: 0 auto;
+}
+.new-post-title-textbox {
+  width: 100%;
+  height: 10px;
+  padding: 8px;
+  margin-bottom: auto;
+  resize: none;
+}
+.new-post-title-textbox-true,
+.new-post-content-textbox-true {
+  background-color: rgb(248, 160, 160); /* 背景色 */
+  border: 1px solid red; /* 枠線色 */
+}
+
+.new-post-title-length,
+.new-post-content-length {
+  text-align: right;
+  margin-top: 0;
+}
+
+.new-post-title-length-true,
+.new-post-content-length-true {
+  color: red;
+}
+
+.new-post-content-textbox {
+  width: 100%;
+  height: 150px;
+  padding: 8px;
+  resize: none;
+}
+
+.new-post-submit-button {
+  display: block;
+  margin: auto;
+  padding: 12px 70px;
+}
+
+/* パスワード変更画面 */
+
+.list-container {
+  text-align: left;
+  list-style-type: none; /* リストマーカーを非表示にします */
+  padding-left: 0; /* 左のパディングを削除して、更に左に寄せます */
+}
+
+.lengthValid-false,
+.uppercase-false,
+.lowercase-false,
+.degit-false,
+.special-char-false,
+.error-message {
+  color: red;
+  font-size: 12px;
+}
+
+.lengthValid-true,
+.uppercase-true,
+.lowercase-true,
+.degit-true,
+.special-char-true {
+  color: blue;
+  font-size: 12px;
+}
+
+/* マイページのブログ一覧 */
+.section .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section article {
+  flex: 1 1 250px;
+  display: flex;
+}
+
+.section .h2 {
+  font-size: 22px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.section p {
+  opacity: 0.8;
+}
+
+.section .photo {
+  min-height: 150px;
+  background-position: center;
+  background-size: cover;
+}
+
+.section a {
+  flex: 1;
+  margin: 10px;
+  display: block;
+  border: solid 1px #ddd;
+  color: inherit;
+  text-decoration: none;
+}
+
+.section a:hover {
+  opacity: 0.8;
+}
+
+.section .text {
+  margin: 10px;
+}
+
+.ellipsis {
+  width: 500px; /* 省略せずに表示するサイズを指定 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+.no-poslts-message {
+  color: rgb(167, 167, 167);
+  margin: 50px;
+}
+
+/* 詳細画面 */
+.post-detail {
+  width: 80%;
+  margin: 0 auto;
+  border: solid 1px #ddd;
+}
+
+.post-detail h2 {
+  text-align: center;
+}
+
+.post-detail p {
+  text-align: left;
+  margin-left: 10px;
+}
+
+/* エラーメッセージ */
+.error-message {
+  color: red;
+  font-size: 13px;
+}
+
+/* 非活性ボタン */
+.submit-button-disabled {
+  background-color: #d3d3d3; /* 薄いグレーの背景色 */
+  color: #a9a9a9; /* 薄い文字色 */
+  border: 1px solid #a9a9a9; /* ボーダーも薄く */
+  pointer-events: none; /* クリックイベントを無視する */
+  cursor: not-allowed; /* カーソルを禁止マークにする */
+}
+
+/* フッター */
+
+.footer {
+  margin-top: 50px;
+}
+
+.previous-link {
+  cursor: 'pointer';
+  textdecoration: 'underline';
+}
